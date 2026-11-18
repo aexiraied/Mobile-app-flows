@@ -1,0 +1,46 @@
+/* Kobo: light theme, green accent */
+.kit.kobo { --k-bg: #F2F2F7; --k-surface: #FFFFFF; --k-surface2: #E7E7EC; --k-label: #111113; --k-label2: #6B6B70; --k-sep: rgba(0,0,0,.09); --k-accent: #0A7D45; --k-on-accent: #FFFFFF; --k-seg-on: #FFFFFF; --k-bad: #C4281C; }
+.kb-splash { background: #0A7D45; color: #fff; }
+.kb-coin { width: 92px; height: 92px; border-radius: 50%; background: #fff; color: #0A7D45; display: grid; place-items: center; font-size: 46px; font-weight: 800; animation: kb-drop 1s var(--k-spring) both; box-shadow: 0 14px 0 -6px rgba(0,0,0,.18); }
+@keyframes kb-drop { from { transform: translateY(-260px) rotate(-200deg); } }
+.kb-word { font-size: 44px; font-weight: 800; letter-spacing: -.04em; animation: k-pop .7s var(--k-spring) .55s both; }
+.kb-bars { display: flex; align-items: flex-end; gap: 10px; height: 150px; margin-bottom: 10px; }
+.kb-bars i { width: 24px; height: var(--v); border-radius: 8px; background: var(--k-accent); transform-origin: bottom; animation: kb-grow .8s var(--k-spring) both; animation-delay: calc(var(--d) * 80ms); opacity: calc(.35 + var(--d) * .13); }
+@keyframes kb-grow { from { transform: scaleY(0); } }
+.kb-badge { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 700; flex: none; }
+.kb-dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+.kb-big { font-size: 44px; font-weight: 800; letter-spacing: -.035em; font-variant-numeric: tabular-nums; }
+.kb-bump { animation: kb-bump .35s var(--k-spring); } @keyframes kb-bump { from { transform: scale(1.09); } }
+.kb-stepper { display: flex; align-items: center; gap: 6px; }
+.kb-step { background: var(--k-surface) !important; font-size: 26px; font-weight: 500; }
+.kb-row-chips { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.kb-hero { background: linear-gradient(150deg, #0A7D45, #075C33); color: #fff; border-radius: 24px; padding: 18px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 16px 30px -14px rgba(10,125,69,.7); }
+.kb-hero-l { font-size: 13.5px; opacity: .85; }
+.kb-hero-amt { font-size: 38px; font-weight: 800; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.kb-prog { height: 8px; border-radius: 4px; background: rgba(255,255,255,.25); overflow: hidden; }
+.kb-prog i { display: block; height: 100%; width: var(--w); background: #fff; border-radius: 4px; transform-origin: left; animation: kb-fill 1s var(--k-spring) .2s both; }
+.kb-prog.thin { height: 6px; background: var(--k-surface2); }
+@keyframes kb-fill { from { transform: scaleX(0); } }
+.kb-chart { width: 100%; height: 170px; display: block; touch-action: pan-y; cursor: crosshair; }
+.kb-groups { display: flex; flex-direction: column; gap: 10px; }
+.kb-group-h { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 4px 0; }
+.kb-detail { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 6px 0; }
+.kb-inset { background: var(--k-bg) !important; }
+.kb-danger { color: var(--k-bad) !important; }
+.kb-add { gap: 14px; }
+.kb-entry { text-align: center; padding: 6px 0; }
+.kb-keys { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.kb-key { min-height: 52px; border-radius: 14px !important; background: var(--k-surface) !important; font-size: 22px; font-weight: 600 !important; transition: transform .35s var(--k-spring), background .15s; }
+.kb-key:active { transform: scale(.92); background: var(--k-surface2) !important; }
+.kb-donut-card { gap: 18px; }
+.kb-donut-wrap { position: relative; width: min(210px, 62%); margin: 0 auto; }
+.kb-donut { width: 100%; aspect-ratio: 1; display: block; }
+.kb-donut-mid { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.kb-donut-mid b { font-size: 21px; font-weight: 800; letter-spacing: -.02em; }
+.kb-legend { display: grid; gap: 12px; }
+.kb-legend li { display: grid; gap: 4px; }
+.kb-leg-top { display: flex; justify-content: space-between; font-weight: 600; }
+.kb-leg-top span { display: inline-flex; align-items: center; gap: 8px; }
+.kb-two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.kb-stat { font-size: 22px; font-weight: 800; letter-spacing: -.02em; }
+.kb-about { text-align: center; padding: 0 12px; }

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marvel Ogbeide Portfolio</title>
+<meta name="description" content="Marvel Ogbeide, software developer in Lagos. Web, mobile and AI. Five working apps you can open on this page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=Caveat:wght@600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="kit.css">
+<link rel="stylesheet" href="kobo.css">
+<link rel="stylesheet" href="waka.css">
+<link rel="stylesheet" href="synapse.css">
+<link rel="stylesheet" href="crema.css">
+<link rel="stylesheet" href="luma.css">
+</head>
+<body>
+
+<canvas id="field" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="nav-name" href="#top">Marvel Ogbeide</a>
+  <nav aria-label="Sections">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a class="nav-cta" href="#contact">Hire Me</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" data-shape="0" data-dim="1">
+    <div class="hero-inner">
+      <p class="status"><span class="pill"><i class="live"></i>Available for work</span><span class="pill quiet">Lagos, <span id="clock">UTC+1</span></span></p>
+      <h1 class="display split">I build apps that feel good to use.</h1>
+      <p class="lede">I'm Marvel Ogbeide, a software developer in Lagos working across web, mobile and AI. You don't have to take my word for it. Five of my apps are running on this page.</p>
+      <div class="dock-wrap">
+        <ul class="dock" aria-label="Open an app">
+          <li><a href="#kobo" class="app-icon ic-kobo" aria-label="Open Kobo"><span aria-hidden="true">₦</span></a><b>Kobo</b></li>
+          <li><a href="#waka" class="app-icon ic-waka" aria-label="Open Waka"><i></i></a><b>Waka</b></li>
+          <li><a href="#synapse" class="app-icon ic-synapse" aria-label="Open Synapse"><i></i><i></i><i></i></a><b>Synapse</b></li>
+          <li><a href="#crema" class="app-icon ic-crema" aria-label="Open Crema"><i></i></a><b>Crema</b></li>
+          <li><a href="#luma" class="app-icon ic-luma" aria-label="Open Luma"><i></i></a><b>Luma</b></li>
+        </ul>
+        <p class="scribble" aria-hidden="true">
+          <svg viewBox="0 0 70 40" width="70" height="40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M66 30C46 36 20 30 8 10"/><path d="M6 22L8 9l12 5"/></svg>
+          tap one, they're real
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div>
+    <span>React</span><span>TypeScript</span><span>React Native</span><span>Expo</span><span>Supabase</span><span>Canvas</span><span>WebGL</span><span>Neural networks</span><span>Product thinking</span>
+    <span>React</span><span>TypeScript</span><span>React Native</span><span>Expo</span><span>Supabase</span><span>Canvas</span><span>WebGL</span><span>Neural networks</span><span>Product thinking</span>
+  </div></div>
+
+  <!-- KOBO -->
+  <section class="project" id="work" data-shape="1" data-dim="0.55">
+    <div class="project-grid">
+      <div class="project-text reveal" id="project-kobo">
+        <p class="eyebrow">Frontend · 8 screens</p>
+        <h2 class="display">Kobo.</h2>
+        <p class="lede">A spending tracker that shows where every kobo goes.</p>
+        <ul class="points">
+          <li>Onboarding that ends with a real budget, not a tour</li>
+          <li>A custom keypad that records an expense in three taps</li>
+          <li>Charts, search and insights that all update from one source of data</li>
+        </ul>
+        <ul class="chips" aria-label="Built with"><li>JavaScript</li><li>Canvas charts</li><li>No libraries</li></ul>
+        <div class="actions"><a class="btn primary" href="#kobo">Open Kobo</a></div>
+      </div>
+      <div class="device-stage reveal"><div class="device" data-app="kobo"><div class="device-screen"></div><a class="device-open" href="#kobo" aria-label="Open Kobo full screen"><span>Tap to Open</span></a></div></div>
+    </div>
+  </section>
+
+  <!-- WAKA -->
+  <section class="project flip" data-shape="2" data-dim="0.55">
+    <div class="project-grid">
+      <div class="project-text reveal" id="project-waka">
+        <p class="eyebrow">Mobile · 9 screens</p>
+        <h2 class="display">Waka.</h2>
+        <p class="lede">Send a package anywhere in Lagos and watch it arrive.</p>
+        <ul class="points">
+          <li>Phone number sign-in with a one-time code</li>
+          <li>Pick two places and the route, price and time update at once</li>
+          <li>Live tracking on a map, with a sheet you can drag</li>
+        </ul>
+        <ul class="chips" aria-label="Built with"><li>JavaScript</li><li>SVG maps</li><li>Gestures</li></ul>
+        <div class="actions"><a class="btn primary" href="#waka">Open Waka</a></div>
+      </div>
+      <div class="device-stage reveal"><div class="device" data-app="waka"><div class="device-screen"></div><a class="device-open" href="#waka" aria-label="Open Waka full screen"><span>Tap to Open</span></a></div></div>
+    </div>
+  </section>
+
+  <!-- SYNAPSE -->
+  <section class="project" data-shape="3" data-dim="0.55">
+    <div class="project-grid">
+      <div class="project-text reveal" id="project-synapse">
+        <p class="eyebrow">AI · 5 screens</p>
+        <h2 class="display">Synapse.</h2>
+        <p class="lede">A neural network you can teach with your finger.</p>
+        <ul class="points">
+          <li>The network and its training are written by hand, with no AI library</li>
+          <li>Drop your own points and watch it redraw its map</li>
+          <li>Ask it about any spot and it tells you how sure it is</li>
+        </ul>
+        <ul class="chips" aria-label="Built with"><li>JavaScript</li><li>Backpropagation</li><li>Adam optimizer</li></ul>
+        <div class="actions"><a class="btn primary" href="#synapse">Open Synapse</a></div>
+      </div>
+      <div class="device-stage reveal"><div class="device" data-app="synapse"><div class="device-screen"></div><a class="device-open" href="#synapse" aria-label="Open Synapse full screen"><span>Tap to Open</span></a></div></div>
+    </div>
+  </section>
+
+  <!-- CREMA -->
+  <section class="project flip" data-shape="4" data-dim="0.55">
+    <div class="project-grid">
+      <div class="project-text reveal" id="project-crema">
+        <p class="eyebrow">Commerce · 9 screens · International</p>
+        <h2 class="display">Crema.</h2>
+        <p class="lede">Order-ahead for a coffee shop, in dollars, euros or pounds.</p>
+        <ul class="points">
+          <li>Customise a drink and the price updates as you tap</li>
+          <li>A bag that merges identical items and totals with tax</li>
+          <li>Live order status, one-tap reorder and a rewards balance</li>
+        </ul>
+        <ul class="chips" aria-label="Built with"><li>JavaScript</li><li>Multi-currency</li><li>Drawn illustrations</li></ul>
+        <div class="actions"><a class="btn primary" href="#crema">Open Crema</a></div>
+      </div>
+      <div class="device-stage reveal"><div class="device" data-app="crema"><div class="device-screen"></div><a class="device-open" href="#crema" aria-label="Open Crema full screen"><span>Tap to Open</span></a></div></div>
+    </div>
+  </section>
+
+  <!-- LUMA -->
+  <section class="project" data-shape="5" data-dim="0.55">
+    <div class="project-grid">
+      <div class="project-text reveal" id="project-luma">
+        <p class="eyebrow">Booking · 11 screens · International</p>
+        <h2 class="display">Luma.</h2>
+        <p class="lede">Appointment booking for a hair and beauty studio.</p>
+        <ul class="points">
+          <li>Three steps from service to confirmed: who, when, review</li>
+          <li>Time slots that show what is open, taken or already yours</li>
+          <li>Reschedule or cancel from a sheet, with a second confirmation</li>
+        </ul>
+        <ul class="chips" aria-label="Built with"><li>JavaScript</li><li>Scheduling logic</li><li>Empty states</li></ul>
+        <div class="actions"><a class="btn primary" href="#luma">Open Luma</a></div>
+      </div>
+      <div class="device-stage reveal"><div class="device" data-app="luma"><div class="device-screen"></div><a class="device-open" href="#luma" aria-label="Open Luma full screen"><span>Tap to Open</span></a></div></div>
+    </div>
+  </section>
+
+  <!-- ALSO BUILT -->
+  <section class="band" data-shape="6" data-dim="0.45">
+    <div class="wrap">
+      <p class="eyebrow reveal">Also built</p>
+      <h2 class="title reveal">Products beyond this page.</h2>
+      <ul class="rows">
+        <li class="reveal">
+          <div><h3>JAMB Quest</h3><p>An exam prep app that teaches how examiners set questions.</p></div>
+          <span class="tag">React Native · Expo · Supabase</span>
+          <span class="state">In development</span>
+        </li>
+        <li class="reveal">
+          <div><h3>Jamb 4 Skill Checker</h3><p>A free check of recall, speed, problem solving and pattern recognition.</p></div>
+          <span class="tag">TypeScript · Responsive web</span>
+          <span class="state">Built</span>
+        </li>
+        <li class="reveal">
+          <div><h3>Èkó Life</h3><p>A 3D life sim set in Lagos that runs in the browser.</p></div>
+          <span class="tag">JavaScript · WebGL</span>
+          <a class="state live-link" href="https://ekolife.netlify.app">Play It</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="band" id="about" data-shape="6" data-dim="0.45">
+    <div class="wrap">
+      <p class="eyebrow reveal">Why me</p>
+      <h2 class="title reveal">Three reasons to put me on your team.</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <p class="card-big">2 days</p>
+          <h3>I ship fast.</h3>
+          <p>Èkó Life went from a first sketch to a public link in two days. I would rather show you something working than describe it.</p>
+        </article>
+        <article class="card reveal">
+          <p class="card-big">End to end</p>
+          <h3>I own the whole thing.</h3>
+          <p>I founded AIED with no funding, so I do the product thinking, the design and the build. I know what a missed detail costs.</p>
+        </article>
+        <article class="card reveal">
+          <p class="card-big">AI-native</p>
+          <h3>AI makes me fast.</h3>
+          <p>I use AI for speed. It compresses build time, so I ship working products in days and spend my energy on the details users feel. Synapse exists because I wanted to understand what is under the hood.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" data-shape="7" data-dim="0.6">
+    <div class="contact-inner">
+      <p class="eyebrow">Open to roles in Nigeria and remote</p>
+      <h2 class="display">Let's build.</h2>
+      <p class="lede">Frontend, mobile or AI-focused engineering. Tell me what you are making.</p>
+      <a class="email" href="mailto:marvelogbeide8@gmail.com">marvelogbeide8@gmail.com</a>
+      <div class="actions center"><button class="btn primary" id="copy-email" type="button">Copy Email</button></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><span>Marvel Ogbeide</span><span>Built by hand in Lagos</span></footer>
+
+<!-- full-screen app pages, opened with #kobo, #waka, #synapse -->
+<div class="app-page" id="app-page" hidden>
+  <header class="app-bar">
+    <a class="btn small" id="app-back" href="#work">Portfolio</a>
+    <b id="app-title"></b>
+    <button class="btn small" id="app-restart" type="button">Restart</button>
+  </header>
+  <div class="app-body">
+    <div class="device big"><div class="device-screen" id="app-root"></div></div>
+    <aside class="app-side">
+      <p class="eyebrow" id="app-kind"></p>
+      <h2 class="title" id="app-name"></h2>
+      <p class="lede" id="app-blurb"></p>
+      <h3>Things to try</h3>
+      <ol id="app-tries"></ol>
+    </aside>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="particles.js"></script>
+<script src="kit.js"></script>
+<script src="kobo.js"></script>
+<script src="waka.js"></script>
+<script src="synapse.js"></script>
+<script src="crema.js"></script>
+<script src="luma.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

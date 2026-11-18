@@ -1,0 +1,43 @@
+/* Crema: warm paper, ink, and one cobalt accent. Serif headings. */
+.kit.crema { --k-bg: #F6F4EF; --k-surface: #FFFFFF; --k-surface2: #ECE8DF; --k-label: #15130F; --k-label2: #6E685E; --k-sep: rgba(21,19,15,.09); --k-accent: #2440F0; --k-on-accent: #FFFFFF; --k-seg-on: #FFFFFF;
+  --k-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, ui-serif, serif; }
+.kit.crema .k-large { font-weight: 700; letter-spacing: -.02em; font-size: 32px; }
+.cr-splash { background: #2440F0; color: #fff; }
+.cr-mark { width: 92px; height: 92px; border-radius: 50%; border: 6px solid #fff; position: relative; overflow: hidden; animation: k-pop .7s var(--k-spring) both; }
+.cr-mark i { position: absolute; inset: 0; background: #fff; transform-origin: bottom; animation: cr-fill 1.3s var(--k-out) .3s both; border-radius: 40% 44% 0 0 / 12% 10% 0 0; }
+@keyframes cr-fill { from { transform: translateY(100%); } to { transform: translateY(38%); } }
+.cr-word { font-family: var(--k-display); font-size: 48px; font-weight: 700; letter-spacing: -.03em; font-style: italic; animation: k-pop .7s var(--k-spring) .5s both; }
+.cr-store { font-size: 13px; font-weight: 600; color: var(--k-accent); text-transform: uppercase; letter-spacing: .06em; padding-top: 12px; }
+.cr-store + .k-large { padding-top: 0; }
+.cr-pick[aria-pressed="true"] .cr-radio { border-color: var(--k-accent); background: radial-gradient(var(--k-accent) 0 45%, transparent 50%); }
+.cr-radio { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--k-surface2); flex: none; transition: border-color .2s; }
+.cr-art { display: grid; place-items: center; border-radius: 22px; background: linear-gradient(155deg, var(--a), color-mix(in srgb, var(--b) 45%, var(--a))); width: 100%; aspect-ratio: 1.15; flex: none; }
+.cr-art svg { width: 62%; filter: drop-shadow(0 8px 10px rgba(0,0,0,.14)); }
+.cr-art.sm { width: 54px; aspect-ratio: 1; border-radius: 16px; } .cr-art.sm svg { width: 72%; }
+.cr-art.lg { aspect-ratio: 1.5; border-radius: 28px; } .cr-art.lg svg { width: 44%; animation: k-pop .7s var(--k-spring) both; }
+.cr-steam { stroke-dasharray: 16; animation: cr-steam 2.4s linear infinite; opacity: .7; } @keyframes cr-steam { from { stroke-dashoffset: 32; } to { stroke-dashoffset: 0; } }
+.cr-reward { background: #15130F; color: #F6F4EF; border-radius: 26px; padding: 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.cr-reward p { font-size: 14px; opacity: .8; } .cr-reward-n { opacity: 1 !important; font-size: 16px !important; } .cr-reward-n b { font-family: var(--k-display); font-size: 40px; line-height: 1; letter-spacing: -.02em; }
+.cr-ring { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: radial-gradient(#15130F 0 58%, transparent 60%), conic-gradient(#7C8DFF calc(var(--p) * 1%), #3a362e 0); flex: none; }
+.cr-again { flex-direction: row !important; align-items: center; text-align: left; color: var(--k-accent) !important; } .cr-again .grow { flex: 1; min-width: 0; color: var(--k-label); } .cr-again .grow b { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cr-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.cr-tile { background: var(--k-surface) !important; border-radius: 26px !important; padding: 8px 8px 14px !important; display: flex !important; flex-direction: column; gap: 4px; text-align: left; transition: transform .45s var(--k-spring); }
+.cr-tile:active { transform: scale(.95); } .cr-tile b { padding: 6px 8px 0; font-weight: 700; } .cr-tile > span:last-child { padding: 0 8px; color: var(--k-label2); font-size: 14px; }
+.cr-item { padding-bottom: 16px; }
+.cr-qty { display: flex; justify-content: space-between; align-items: center; background: var(--k-surface); border-radius: 18px; padding: 10px 14px; }
+.cr-stepper { display: inline-flex; align-items: center; gap: 4px; background: var(--k-surface2); border-radius: 999px; padding: 3px; width: max-content; }
+.cr-stepper button { width: 34px; height: 34px; border-radius: 50% !important; background: var(--k-surface) !important; font-size: 20px; font-weight: 600 !important; transition: transform .35s var(--k-spring); } .cr-stepper button:active { transform: scale(.85); }
+.cr-stepper b { min-width: 26px; text-align: center; font-variant-numeric: tabular-nums; } .cr-bump { animation: cr-bump .35s var(--k-spring); } @keyframes cr-bump { from { transform: scale(1.5); } }
+.cr-foot { flex: none; padding: 10px 16px 16px; background: linear-gradient(transparent, var(--k-bg) 30%); }
+.cr-bag { display: flex; flex-direction: column; gap: 16px; }
+.cr-line { align-items: flex-start !important; } .cr-line .cr-stepper { margin-top: 8px; display: inline-flex !important; } .cr-line .cr-stepper b { display: inline !important; }
+.cr-totals p { display: flex; justify-content: space-between; color: var(--k-label2); font-variant-numeric: tabular-nums; } .cr-totals p.strong { color: var(--k-label); font-weight: 700; font-size: 18px; border-top: 1px solid var(--k-sep); padding-top: 12px; }
+.cr-empty { padding: 20px 0 !important; } .cr-empty .cr-art { width: 70%; } .cr-empty h2 { font-family: var(--k-display); font-size: 24px; }
+.cr-progress { width: 150px; height: 150px; border-radius: 50%; display: grid; place-items: center; color: var(--k-accent); background: radial-gradient(var(--k-bg) 0 62%, transparent 64%), conic-gradient(var(--k-accent) calc(var(--p) * 1%), var(--k-surface2) 0); transition: --p 1.2s var(--k-out); }
+@property --p { syntax: '<number>'; inherits: true; initial-value: 0; }
+.cr-progress.ready { animation: cr-ready .8s var(--k-spring); } @keyframes cr-ready { 40% { transform: scale(1.14); } }
+.cr-steps { display: grid; gap: 6px; text-align: left; } .cr-steps li { display: flex; align-items: center; gap: 10px; color: var(--k-label2); } .cr-steps li i { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--k-label2); transition: all .4s var(--k-spring); }
+.cr-steps li.done { color: var(--k-label); font-weight: 600; } .cr-steps li.done i { background: var(--k-accent); border-color: var(--k-accent); transform: scale(1.25); }
+.cr-order-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.cr-link { color: var(--k-accent) !important; font-weight: 700 !important; min-height: 44px; padding: 0 4px !important; }
+.cr-tier { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--k-surface2); font-weight: 700; font-size: 14px; flex: none; } .cr-tier.on { background: var(--k-accent); color: #fff; }
