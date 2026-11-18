@@ -1,0 +1,7 @@
+{
+  "name": "mobile-app-flows",
+  "version": "1.0.0",
+  "description": "Five multi-screen mobile app flows in plain JavaScript",
+  "scripts": { "test": "node --test" },
+  "license": "MIT"
+}
