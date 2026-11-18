@@ -2,7 +2,7 @@
 
 Five multi-screen mobile app flows built in plain JavaScript, HTML and CSS, with no framework.
 
-**Live:** [marvel-ogbeide.netlify.app](https://marvel-ogbeide.netlify.app). Tap any app to open it.
+**Live:** [marvel-ogbeide.vercel.app](https://marvel-ogbeide.vercel.app). Tap any app to open it.
 
 | App | What it is | Highlights |
 | --- | --- | --- |
